@@ -4,12 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOMProject1</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Note Taking App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quae, quaerat facere, sequi ipsa dicta deserunt ex blanditiis voluptatem, ea perferendis eveniet? Assumenda reiciendis consequatur ullam quam soluta dolorum nostrum quod eos quis consequuntur labore aut at corporis dicta facere accusamus, est autem dignissimos tempora culpa perspiciatis ad sint. Corrupti id iusto saepe sunt. Dolorum, eaque quia odio itaque consectetur sed quis voluptatem eius fugit quisquam similique nam facere ipsa ipsum, modi maiores harum veniam eligendi. Dolor error at, nostrum magnam voluptatem voluptas sunt omnis velit non tenetur officiis corporis atque cum, voluptatibus aspernatur, fugiat similique dolorem! Tempora, quae suscipit!</p>
-
+    <div class="main">
+<!-- Header -->
+<header>
+    <div class="logo">
+        <h2>Note App</h2>
+    </div>
+    <div class="search">
+        <input type="text" id="srch" placeholder="Search and Note....">
+    </div>
+</header>
+<!-- Container -->
+<div id="con-body" class="container">
+    <!-- Input Form -->
+    <div class="inp-frm">
+        <form id="add-frm" action="">
+            <h3>Add a Note</h3>
+            <input type="text" id="n-title" placeholder="Title...">
+            <textarea id="n-body" placeholder="NoteBody..."></textarea>
+            <button type="submit" id="save">Save</button>
+            <button type="reset" id="reset">Reset</button>
+        </form>
+    </div>
+    <!-- Table -->
+    <div class="table" id="tbl-div">
+        <table id="items">
+            <tr>
+                <th>Title</th>
+                <th>View</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+</body>
 <script src="main.js"></script>    
 </body>
 </html>

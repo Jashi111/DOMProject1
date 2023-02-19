@@ -1,24 +1,20 @@
-/* Reset */
+/* ------Reset------ */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-/* Common */
+
+/* ------Common------ */
 body{
     background-image: url(https://images.pexels.com/photos/317356/pexels-photo-317356.jpeg);
     background-position: center;
     background-size: cover;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
     overflow-x: hidden;
 }
-
-.main{
-    
-}
-
 button{
     cursor: pointer;
     border: none;
@@ -26,12 +22,10 @@ button{
     font-size: 0.8rem;
     transition: all 0.3s ease-in;
 }
-
 button:hover{
     background-color: #fff !important;
     color: #000 !important;
 }
-
 input, textarea, table{
     font-size: 1rem;
 }
@@ -39,7 +33,7 @@ input, textarea, table{
     font-size: 0.9rem;
 }
 
-/* Header */
+/* ------Header------ */
 header{
     background-color: #0984e3;
     max-width: 650px;
@@ -47,24 +41,20 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    border: 3px black solid;
+    padding: 20px;
 }
-
 header .logo{
     background-color: #fff;
     color: #0984e3;
     padding: 5px;
 }
-
 header .search input{
     width: 250px;
     height: 30px;
     padding: 16px 10px;
 }
 
-/* Container */
-
+/* ------Container------ */
 .container{
     background-color: transparent;
     max-width: 650px;
@@ -73,18 +63,15 @@ header .search input{
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
-    border: 3px black solid;
+    border: 5px #0984e3 solid;
 }
-
 /* Input Form */
-
 .container .inp-frm{
     background-color: black;
     width: 40%;
     padding: 3px;
     margin-right: 10px;
 }
-
 .container .inp-frm form{
     margin: auto;
     background-color: #0984e3;
@@ -114,10 +101,9 @@ header .search input{
     color: #fff;
 }
 .container .inp-frm #reset{
-    background-color: #06612f;
+    background-color: #810404;
     color: #fff;
 }
-
 /* Table */
 .container .table{
     background-color: black;
@@ -132,18 +118,18 @@ header .search input{
     background-color: #0984e3;
     border-collapse: collapse;
 }
-.container .table .note-body{
+.container .table .span{
     display: none;
 }
 .container .table table,
 .container .table table td{
+    border: 2px #fff solid;
     padding: 5px;
-    border: 1px #fff solid;
 }
 .container .table table th{
     padding: 5px;
     text-align: left;
-    background-color: pink;
+    background-color: #636e72;
 }
 .container .table table th:last-child,
 .container .table table th:nth-last-child(2){
@@ -159,13 +145,14 @@ header .search input{
     text-overflow: ellipsis;
 }
 .container .table table .btcellv button{
-    background-color: green;
-    color: #FFF;
+    background-color: #06612f;
+    color: #fff;
 }
 .container .table table .btcelld button{
-    background-color: red;
-    color: #FFF;
+    background-color: #810404;
+    color: #fff;
 }
+
 /* ------Responsive------ */
 @media(max-width: 600px){
     /* Header */
